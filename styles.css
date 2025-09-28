@@ -20,7 +20,7 @@ body {
 .profile-header h1 {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-size: 2rem;
+    font-size: 36px;
 }
 
 .profile-header p {
@@ -39,6 +39,8 @@ body {
 
 .blog-post {
     margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd; /*line between the blog pots*/
 }
 
 .blog-post h2 {
@@ -56,6 +58,13 @@ body {
 .blog-post p {
     text-align: justify;
 }
+
+.blog-post::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .post-img {
     margin: 0.5rem 1rem 0.5rem 0;
     border-radius: 8px;
@@ -63,6 +72,7 @@ body {
 
 .post-img.right {
     float: right;
+    margin: 0 0 15px 15px;
 }
 
 .post-img.left {
@@ -103,7 +113,6 @@ footer {
 
 /* Styling the sidebar */
 .sidebar {
-    background: #f9f9f9;
     padding: 1rem;
     border-radius: 8px;
 }
@@ -127,7 +136,6 @@ footer {
     margin-bottom: 0.5rem;
     }
 
-/* Social Media Section */
 .sidebar .social-media h3,
 .sidebar .archives h3 {
     color: #48BB78;                 /* heading color */
